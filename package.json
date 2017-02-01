@@ -1,0 +1,26 @@
+{
+  "name": "marko-phil",
+  "version": "1.0.0",
+  "description": "Marko.js sample app",
+  "main": "src/server.js",
+  "author": "Phil Gates-Idem <phil.gates-idem@lifeomic.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "marko-app start",
+    "build": "marko-app build",
+    "eject": "marko-app eject",
+    "test": "mocha test/**/*-test.js"
+  },
+  "dependencies": {
+    "marko": "4.0.0-rc.11",
+    "new-marko-app": "github:mlrawlings/new-marko-app"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.0",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-mocha": "^4.8.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}

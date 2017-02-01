@@ -1,0 +1,20 @@
+class {
+  onInput(props) {
+    // this.state = { error: '' } // Works
+    this.state = { error: null } // Does not work
+  }
+  submit(e) {
+    e.preventDefault();
+    setTimeout(() => {
+      console.log("Setting error")
+      this.state.error = 'o no!'
+    }, 100)
+  }
+}
+
+<form on-submit('submit')>
+  <p if(state.error)>
+    Error: ${state.error}
+  </p>
+  <button type="submit">Sign In</button>
+</form>
